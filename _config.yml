@@ -81,7 +81,7 @@ author:
   name: "Cnangyu Gao"
   avatar: "profile.png"
   bio: "Industrial Engineering PhD student at UW-Madison"
-  location: "Madison, WI"
+  location:
   employer:
   pubmed:
   googlescholar:
@@ -104,7 +104,7 @@ author:
   orcid:
   pinterest:
   soundcloud:
-  stackoverflow: https://stackoverflow.com/users/5585265/blancmange
+  stackoverflow: 5585265/blancmange
   steam:
   tumblr:
   twitter:

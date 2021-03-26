@@ -13,6 +13,7 @@ I am a second-year Industrial Engineering PhD student at the [University of Wisc
 Before Madison, I received my B.S. in mathematics at the [University of Science and Technology of China (USTC)](https://en.ustc.edu.cn/).
 
 My current research interests are Bayesian learning, non-convex optimization and deep learning theory.
+Check out my CV [here](/files/CV.pdf).
 
 ## Contact
 
