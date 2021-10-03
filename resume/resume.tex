@@ -1,0 +1,189 @@
+\documentclass[letterpaper,12pt]{article}
+
+
+\usepackage{fontawesome}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-.3in}
+% \addtolength{\textheight}{1.0in}
+\usepackage[left=0.5in,top=0.6in,right=0.5in,bottom=0.6in]{geometry}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\Large Changyu Gao} & Email : \href{mailto:changyu.gao@wisc.edu}{changyu.gao@wisc.edu}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1 (608) 949-4659\\
+% \end{tabular*}
+
+\begin{center}
+  \textbf{\Huge \scshape Changyu Gao} \\ \vspace{8pt}
+  \begin{tabular}{r@{\hskip 1.5mm}c@{\hskip 1.5mm}l}
+
+    +1 (608) 949-4659                                     & \(|\) & \href{mailto:changyu.gao@wisc.edu}{changyu.gao@wisc.edu} \\
+    \faGithub \, \href{https://github.com/cyugao}{cyugao} & \(|\) &
+    \faLinkedin \, \href{https://www.linkedin.com/in/changyu-gao}{in/changyu-gao}
+  \end{tabular}
+\end{center}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Wisconsin--Madison}{Madison, WI}
+{Ph.D. Student in Industrial Engineering, Optimization Track}{Sep 2019 -- Present}
+% \textit{\small{M.S. Student in Computer Science}}\textit{\small{Feb 2021 -- Present}}
+\resumeSubheading
+{University of Wisconsin--Madison}{Madison, WI}
+{M.S. Student in Computer Science}{Feb 2021 -- Present}
+
+
+Relevant Coursework: Linear/Nonlinear/Integer Optimization,
+Database Systems, Machine Learning.
+\resumeSubheading
+{University of Science and Technology of China}{Hefei, China}
+{B.S., Mathematics and Applied Mathematics (Outstanding Graduate)}{Aug 2015 -- June 2019}
+
+Relevant Coursework: Algorithms, Multivariate Analysis, Time Series Analysis, Data Visualization.
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+\resumeSubheading
+{University of Wisconsin--Madison}{Madison, WI}
+{Research Assistant, Supervisor: \textup{\textbf{Stephen Wright}}}{Nov 2019 -- Present}
+\resumeItemListStart
+\resumeItem{Parameter Learning with DFO methods}
+{Implemented the parameter learning procedure for Lorenz96 model using derivative-free optimization methods in Python. Performed optimization with uncertainty function values using soft interpolation and Bayesian methods.}
+\resumeItem{Subseasonal Climate Forecasting}
+{Improved the parameter estimation with ensembles. Investigated the sensitivity of the dynamic systems. Implemented model reduction methods in Python.}
+\resumeItemListEnd
+
+
+\resumeSubheading
+{University of Science and Technology of China}{Hefei, China}
+{Research Assistant, Advisor: \textup{\textbf{Liansheng Zhuang}}}{Mar 2019 -- May 2019}
+\resumeItemListStart
+\resumeItem{Complex-valued Neural Network}
+{Surveyed various types of complex-valued neural networks. Implemented Associative LSTM in Keras. Validated the performance of the complex-valued neural network with experiments in Python.}
+\resumeItemListEnd
+
+\resumeSubheading
+{University of British Columbia--Okanagan}{Kelowna, BC, Canada}
+{Research Assistant, Advisor: \textup{\textbf{Jeff Andrews}}}{July 2018 -- Sep 2018}
+\resumeItemListStart
+\resumeItem{Overfitting problem in flexible model-based clustering}
+{Implemented the bootstrap sampling EM algorithm and ran simulations for testing in R. Alleviated the overfitting with bootstrap EM algorithm.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Selected Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Distribution System Optimization}
+{Modeling of two-stage optimization of the distribution system. Implemented in GAMS and Python. Data is collected and cleaned using BeautifulSoup and Pandas.}
+\resumeSubItem{Knapsack Problem}
+{Implemented various algorithms to solve the problem: depth first search, best first search and dynamic programming. Implemented branch and bound method to prune the search space.}
+\resumeSubItem{Stock Info Visualization with Dash}
+{Interactive visualization of stock historical information using Dash Framework. Wrote the data storage and update logic with callback functions.}
+\resumeSubHeadingListEnd
+
+%
+% --------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+
+\resumeSubItem{Languages}{Python, SQL, MATLAB, R, C, C++, Java}
+
+\resumeSubItem{Frameworks}{Tensorflow, Pytorch, Pandas, Numpy, Scipy}
+
+\resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}
