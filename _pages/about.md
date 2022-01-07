@@ -13,7 +13,7 @@ I am a third-year Industrial Engineering PhD student at the [University of Wisco
 Before Madison, I received my B.S. in Mathematics at the [University of Science and Technology of China (USTC)](https://en.ustc.edu.cn/).
 
 My current research interests are machine learning, non-convex optimization and differentially private optimization methods. \\
-Check out my CV [here](/files/CV.pdf).
+Check out my CV [here](/resume/resume.pdf).
 
 ## Contact
 
