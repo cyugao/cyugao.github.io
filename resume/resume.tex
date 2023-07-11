@@ -1,6 +1,5 @@
 \documentclass[letterpaper,12pt]{article}
 
-
 \usepackage{fontawesome}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -13,6 +12,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{hyperref}
 
 
 \pagestyle{fancy}
@@ -84,13 +84,13 @@
 % \end{tabular*}
 
 \begin{center}
-  \textbf{\Huge \scshape Changyu Gao} \\ \vspace{8pt}
-  \begin{tabular}{r@{\hskip 1.5mm}c@{\hskip 1.5mm}l}
-
-    +1 (608) 949-4659                                     & \(|\) & \href{mailto:changyu.gao@wisc.edu}{changyu.gao@wisc.edu} \\
-    \faGithub \, \href{https://github.com/cyugao}{cyugao} & \(|\) &
-    \faLinkedin \, \href{https://www.linkedin.com/in/changyu-gao}{in/changyu-gao}
+  \textbf{\Huge Changyu Gao}
+\begin{center}
+  \begin{tabular}{c}
+    \href{mailto:changyu.gao@wisc.edu}{Email:changyu.gao@wisc.edu} \\
+    \faGithub \, \href{https://github.com/cyugao}{cyugao} \, \faLinkedin \, \href{https://www.linkedin.com/in/changyu-gao}{in/changyu-gao}
   \end{tabular}
+\end{center}
 \end{center}
 
 %-----------EDUCATION-----------------
@@ -128,16 +128,45 @@
 {Research Assistant, University of Wisconsin--Madison}{Madison, WI}
 {Supervisor: \textup{\textbf{Stephen Wright}}}{Nov 2019 -- Present}
 \resumeItemListStart
-\resumeItem{Differentially Private Optimization}
-{Designed a differentially private optimization algorithm for finding an approximate second-order stationary point with convergence guarantees. Applied the algorithm to the empirical risk minimization problem with adaptive mini-batching.}
-\resumeItem{Optimization Methods for Probabilistic Soft Logic (PSL)}
-{Implemented and tested HOGWILD! and Frank-Wolfe methods for PSL framework. Carried out inference experiments on real datasets.}
-\resumeItem{Parameter Learning with Derivative-Free Optimization (DFO) Methods}
-{Implemented the parameter learning procedure for Lorenz96 model using DFO methods in Python. Performed optimization with uncertainty function values using soft interpolation and Bayesian methods.}
+\resumeItem{Differentially Private Optimization}{
+  \begin{itemize}
+    \item Designed a differentially private optimization algorithm for finding an approximate second-order stationary point with convergence guarantees.
+    \item Applied the algorithm to the empirical risk minimization problem with adaptive mini-batching.
+    \item Implemented the algorithm using Pytorch and demonstrated its performance through experiments.
+  \end{itemize}
+}
+
+\resumeItem{Optimization Methods for Probabilistic Soft Logic (PSL)}{
+  \begin{itemize}
+    \item Implemented and tested HOGWILD! and Frank-Wolfe methods for PSL framework using Java.
+    \item Carried out inference experiments on real datasets.
+    \item Proved theoretical guarantees for the proposed formulation of PSL.
+  \end{itemize}
+}
+
+\resumeItem{Parameter Learning with Derivative-Free Optimization (DFO) Methods}{
+  \begin{itemize}
+    \item Implemented the parameter learning procedure for Lorenz96 model using DFO methods in Python.
+    \item Performed optimization with uncertainty function values using soft interpolation and Gaussian Process methods.
+  \end{itemize}
+} 
 % \resumeItem{Subseasonal Climate Forecasting}
 % {Improved the parameter estimation with ensembles. Investigated the sensitivity of the dynamic systems. Implemented model reduction methods in Python.}
 \resumeItemListEnd
 
+\resumeSubheading {Research Scientist Intern, Meta}{Menlo Park, CA}
+{Team: \textup{\textbf{Meta AI (FAIR) -- Reality Labs}}}{Sep 2022 -- Jan 2023}
+\resumeItemListStart
+\resumeItem{Adaptive Training for Transformer-based Models}{
+  \begin{itemize}
+    \item Contributed to the open source project \href{https://github.com/facebookresearch/fairscale}{fairscale}.
+    Fixed gradient accumulation bugs.
+    \item Implemented methods to collect and analyze the gradient statistics during training of the Translation task using the Transformer model.
+    Based on the gradient statistics, designed and implemented an adaptive training method to improve the training efficiency.
+    \item Our algorithm uses the gradient statistics to dynamically adjust the gradient accumulation steps and the learning rate, achieving the baseline with better efficiency.
+  \end{itemize}
+}
+\resumeItemListEnd
 
 \resumeSubheading {Applied Scientist Intern, Amazon}{Seattle, WA}
 {Team: \textup{\textbf{Delivery Experience (DEX) -- AI}}}{May 2021 -- Aug 2021}
@@ -186,7 +215,10 @@
 
 \resumeSubHeadingListEnd
 
-
+% --------PUBLICATIONS------------
+\section{Publications}
+Changyu Gao and Stephen J Wright. Differentially Private Optimization for Smooth Nonconvex ERM
+\href{https://arxiv.org/abs/2302.04972}{arXiv preprint} arXiv:2302.04972, 2023
 
 
 %-------------------------------------------
