@@ -56,6 +56,12 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingTitleOnly}[1]{
+  \vspace{-1pt}\item
+    \textbf{#1}
+  \vspace{-5pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
@@ -108,9 +114,46 @@
 {B.S., Mathematics and Applied Mathematics \emph{(Outstanding Graduate)}}{Aug 2015 -- June 2019}
 \resumeSubHeadingListEnd
 
+\section{Research Experience}
+\textit{PhD advisor:} \textup{\textbf{Prof. Stephen Wright}}
+
+\resumeSubHeadingListStart
+\resumeSubheadingTitleOnly{Differentially Private Optimization}
+  \begin{itemize}
+    \item Designed a differentially private optimization algorithm for finding an approximate second-order stationary point with convergence guarantees.
+    \item Applied the algorithm to the empirical risk minimization problem with adaptive mini-batching.
+    \item Implemented the algorithm using Pytorch and demonstrated its performance through experiments.
+  \end{itemize}
+
+
+\resumeSubheadingTitleOnly{Neural Collapse and Loss Function Design \\ {\normalfont \textit{Advisor:}} Dr. Yiqiao Zhong}
+  \begin{itemize}
+    \item Carried out experiments to the influence of various loss functions on the neural collapse phenomenon.
+    % \item Investigated the convergence behavior of different loss functions.
+    \item Characterized and analyzed the convergence behavior for the cross entropy loss function with label smoothing, for linearly separable data.
+  \end{itemize}
+
+
+\resumeSubheadingTitleOnly{Optimization Methods for Probabilistic Soft Logic (PSL)}
+  \begin{itemize}
+    \item Implemented and tested HOGWILD! and Frank-Wolfe methods for PSL framework using Java.
+    \item Carried out inference experiments on real datasets.
+    \item Proved theoretical guarantees for the proposed formulation of PSL.
+  \end{itemize}
+
+
+\resumeSubheadingTitleOnly{Parameter Learning with Derivative-Free Optimization (DFO) Methods}
+  \begin{itemize}
+    \item Implemented the parameter learning procedure for Lorenz96 model using DFO methods in Python.
+    \item Performed optimization with uncertainty function values using soft interpolation and Gaussian Process methods.
+  \end{itemize}
+
+% \resumeItem{Subseasonal Climate Forecasting}
+% {Improved the parameter estimation with ensembles. Investigated the sensitivity of the dynamic systems. Implemented model reduction methods in Python.}
+\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
-\section{Experience}
+\section{Work Experience}
 \resumeSubHeadingListStart
 
 % --------Multiple Positions Heading------------
@@ -124,38 +167,10 @@
 %-------------------------------------------
 
 
-\resumeSubheading
-{Research Assistant, University of Wisconsin--Madison}{Madison, WI}
-{Supervisor: \textup{\textbf{Stephen Wright}}}{Nov 2019 -- Present}
-\resumeItemListStart
-\resumeItem{Differentially Private Optimization}{
-  \begin{itemize}
-    \item Designed a differentially private optimization algorithm for finding an approximate second-order stationary point with convergence guarantees.
-    \item Applied the algorithm to the empirical risk minimization problem with adaptive mini-batching.
-    \item Implemented the algorithm using Pytorch and demonstrated its performance through experiments.
-  \end{itemize}
-}
 
-\resumeItem{Optimization Methods for Probabilistic Soft Logic (PSL)}{
-  \begin{itemize}
-    \item Implemented and tested HOGWILD! and Frank-Wolfe methods for PSL framework using Java.
-    \item Carried out inference experiments on real datasets.
-    \item Proved theoretical guarantees for the proposed formulation of PSL.
-  \end{itemize}
-}
-
-\resumeItem{Parameter Learning with Derivative-Free Optimization (DFO) Methods}{
-  \begin{itemize}
-    \item Implemented the parameter learning procedure for Lorenz96 model using DFO methods in Python.
-    \item Performed optimization with uncertainty function values using soft interpolation and Gaussian Process methods.
-  \end{itemize}
-} 
-% \resumeItem{Subseasonal Climate Forecasting}
-% {Improved the parameter estimation with ensembles. Investigated the sensitivity of the dynamic systems. Implemented model reduction methods in Python.}
-\resumeItemListEnd
 
 \resumeSubheading {Research Scientist Intern, Meta}{Menlo Park, CA}
-{Team: \textup{\textbf{Meta AI (FAIR) -- Reality Labs}}}{Sep 2022 -- Jan 2023}
+{Team: \textup{\textbf{Meta AI (FAIR) -- Reality Labs}, supervised by \textbf{Dr. Min Xu}}}{Sep 2022 -- Jan 2023}
 \resumeItemListStart
 \resumeItem{Adaptive Training for Transformer-based Models}{
   \begin{itemize}
@@ -181,13 +196,13 @@
 }
 \resumeItemListEnd
 
-\resumeSubheading
-{Research Assistant, University of Science and Technology of China}{Hefei, China}
-{Advisor: \textup{\textbf{Liansheng Zhuang}}}{Mar 2019 -- May 2019}
-\resumeItemListStart
-\resumeItem{Complex-valued Neural Network}
-{Surveyed various types of complex-valued neural networks. Implemented Associative LSTM in Keras. Validated its performance with experiments.}
-\resumeItemListEnd
+% \resumeSubheading
+% {Research Assistant, University of Science and Technology of China}{Hefei, China}
+% {Advisor: \textup{\textbf{Liansheng Zhuang}}}{Mar 2019 -- May 2019}
+% \resumeItemListStart
+% \resumeItem{Complex-valued Neural Network}
+% {Surveyed various types of complex-valued neural networks. Implemented Associative LSTM in Keras. Validated its performance with experiments.}
+% \resumeItemListEnd
 
 
 \resumeSubHeadingListEnd
@@ -211,14 +226,22 @@
 
 \resumeSubItem{Languages}{Python, SQL, MATLAB, R, C, C++, Java}
 
-\resumeSubItem{Frameworks}{Tensorflow, Pytorch, Pandas, Numpy, Scipy}
+\resumeSubItem{Frameworks}{Pytorch, Tensorflow, JAX, Pandas, Numpy, Scipy}
 
 \resumeSubHeadingListEnd
 
 % --------PUBLICATIONS------------
 \section{Publications}
-Changyu Gao and Stephen J Wright. Differentially Private Optimization for Smooth Nonconvex ERM
-\href{https://arxiv.org/abs/2302.04972}{arXiv preprint} arXiv:2302.04972, 2023
+\begin{itemize}[leftmargin=*, label={}]
+  \item 
+  \textbf{Changyu Gao} and Stephen J Wright. Differentially Private Optimization for Smooth Nonconvex ERM
+  \href{https://arxiv.org/abs/2302.04972}{arXiv preprint} arXiv:2302.04972, 2023. Presented in \href{https://tpdp.journalprivacyconfidentiality.org/2023/}{TPDP 2023}.
+  
+  \item
+  Charles Andrew Dickens, \textbf{Changyu Gao}, Connor Pryor, Stephen Wright, Lise Getoor.
+  Convex and Bilevel Optimization for Neuro-Symbolic Inference and Learning.
+  \href{https://openreview.net/forum?id=uJPWeZffgl}{OpenReview}. Submitted to ICLR.
+\end{itemize}
 
 
 %-------------------------------------------

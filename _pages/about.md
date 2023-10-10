@@ -21,6 +21,10 @@ Check out my CV [here](/resume/resume.pdf).
 Email: [firstname].[lastname] [at] wisc.edu
 
 ## Publication
-Changyu Gao and Stephen J Wright. Differentially Private Optimization for Smooth Nonconvex ERM
-[arXiv preprint](https://arxiv.org/abs/2302.04972) arXiv:2302.04972, 2023
+**Changyu Gao** and Stephen J Wright. Differentially Private Optimization for Smooth Nonconvex ERM
+[arXiv preprint](https://arxiv.org/abs/2302.04972) arXiv:2302.04972, 2023. Presented in [TPDP 2023](https://tpdp.journalprivacyconfidentiality.org/2023/) [Poster](/files/DPOPT_tpdp_poster.pdf).
+
+Charles Andrew Dickens, **Changyu Gao**, Connor Pryor, Stephen Wright, Lise Getoor.
+Convex and Bilevel Optimization for Neuro-Symbolic Inference and Learning.
+[OpenReview](https://openreview.net/forum?id=uJPWeZffgl). Submitted to ICLR.
 
