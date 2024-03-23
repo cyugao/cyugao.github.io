@@ -27,7 +27,9 @@
 % \addtolength{\textwidth}{1in}
 % \addtolength{\topmargin}{-.3in}
 % \addtolength{\textheight}{1.0in}
-\usepackage[left=0.5in,top=0.6in,right=0.5in,bottom=0.6in]{geometry}
+% \usepackage[left=0.5in,top=0.6in,right=0.5in,bottom=0.6in]{geometry}
+\usepackage[left=0.5in,top=1in,right=0.5in,bottom=1in]{geometry}
+% \usepackage[margin=0.8in]{geometry}
 
 \urlstyle{same}
 
@@ -115,20 +117,29 @@
 \resumeSubHeadingListEnd
 
 \section{Research Experience}
-\textit{PhD advisor:} \textup{\textbf{Prof. Stephen Wright}}
+\textit{Advisor:} \textup{\textbf{Prof. Stephen Wright}}
 
 \resumeSubHeadingListStart
-\resumeSubheadingTitleOnly{Differentially Private Optimization}
+
+\resumeSubheadingTitleOnly{Private Federated Learning \\
+{\normalfont \textit{Collaborator:}} Dr. Andrew Lowy, Dr. Xingyu Zhou}
   \begin{itemize}
-    \item Designed a differentially private optimization algorithm for finding an approximate second-order stationary point with convergence guarantees.
-    \item Applied the algorithm to the empirical risk minimization problem with adaptive mini-batching.
+    \item Developed a novel federated learning algorithm with inter-silo record-level differential privacy guarantees, utilizing the phased localization technique.
+    \item Our algorithm achieves the \textit{optimal} population excess risk bound for heterogeneous data distributions; previous algorithms only achieve suboptimal bounds.
+    \item Our algorithm is communication-efficient than the prior state-of-the-art algorithms.
+  \end{itemize}
+
+\resumeSubheadingTitleOnly{Differentially Private Optimization for Smooth Nonconvex ERM}
+  \begin{itemize}
+    \item Designed differentially private optimization algorithms for finding an approximate second-order stationary point with convergence guarantees.
+    \item Proposed line search, mini-batching, and a two-phase strategy to improve the speed and practicality of the algorithms.
     \item Implemented the algorithm using Pytorch and demonstrated its performance through experiments.
   \end{itemize}
 
 
 \resumeSubheadingTitleOnly{Neural Collapse and Loss Function Design \\ {\normalfont \textit{Collaborator:}} Dr. Yiqiao Zhong}
   \begin{itemize}
-    \item Carried out experiments to the influence of various loss functions on the neural collapse phenomenon.
+    \item Conducted extensive experiments to examine the impact of diverse loss functions on the neural collapse phenomenon.
     % \item Investigated the convergence behavior of different loss functions.
     \item Characterized and analyzed the convergence behavior for the cross entropy loss function with label smoothing, for linearly separable data.
   \end{itemize}
@@ -137,8 +148,8 @@
 \resumeSubheadingTitleOnly{Optimization Methods for Probabilistic Soft Logic (PSL)}
   \begin{itemize}
     \item Implemented and tested HOGWILD! and Frank-Wolfe methods for PSL framework using Java.
-    \item Carried out inference experiments on real datasets.
-    \item Proved theoretical guarantees for the proposed formulation of PSL.
+    \item Executed inference experiments on real-world datasets, validating the practicality of these methods.
+    \item Proved theoretical guarantees for the proposed bilevel formulation of PSL.
   \end{itemize}
 
 
@@ -232,10 +243,14 @@
 
 % --------PUBLICATIONS------------
 \section{Publications}
+
 \begin{itemize}[leftmargin=*, label={}]
   \item 
   \textbf{Changyu Gao} and Stephen J Wright. Differentially Private Optimization for Smooth Nonconvex ERM
   \href{https://arxiv.org/abs/2302.04972}{arXiv preprint} arXiv:2302.04972, 2023. \href{https://tpdp.journalprivacyconfidentiality.org/2023/}{TPDP 2023} Poster.
+
+  \item 	
+  \textbf{Changyu Gao}, Andrew Lowy, Stephen Wright, Xingyu Zhou. Private Heterogeneous Federated Learning Without a Trusted Server Revisited: Error-Optimal and Communication-Efficient Algorithms for Convex Losses
   
   \item
   Charles Andrew Dickens, \textbf{Changyu Gao}, Connor Pryor, Stephen Wright, Lise Getoor.
