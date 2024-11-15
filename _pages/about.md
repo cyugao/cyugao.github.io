@@ -8,19 +8,18 @@ redirect_from:
   - /about.html
 ---
 
-I am an Industrial Engineering PhD student at the [University of Wisconsin-Madison](https://www.wisc.edu/), advised by Prof. [Stephen Wright](http://pages.cs.wisc.edu/~swright/).
+I am a PhD Candidate in Industrial Engineering at the [University of Wisconsin-Madison](https://www.wisc.edu/), under the guidance of Prof. [Stephen Wright](http://pages.cs.wisc.edu/~swright/). I also hold an M.S. in Computer Science from the University of Wisconsin-Madison. Prior to my time in Madison, I earned a B.S. in Mathematics from the [University of Science and Technology of China (USTC)](https://en.ustc.edu.cn/).
 
-Before coming to Madison, I received my B.S. in Mathematics at the [University of Science and Technology of China (USTC)](https://en.ustc.edu.cn/).
+My research is centered on the design and analysis of optimization algorithms for machine learning applications.
 
-My current research interests are machine learning, non-convex optimization and differentially private optimization methods.
-
-Check out my CV [here](/resume/resume.pdf).
+**I am actively seeking machine learning engineer/scientist positions in the industry!**
+You can view my CV [here](/resume/resume.pdf).
 
 ## Contact
 
 Email: [firstname].[lastname] [at] wisc.edu
 
-## Publication
+## Publications
 **Changyu Gao**, Andrew Lowy, Stephen J. Wright, Xingyu Zhou.
 Optimal Rates for Robust Stochastic Convex Optimization, Submitted.
 
