@@ -24,15 +24,15 @@ Email: [firstname].[lastname] [at] wisc.edu
 **Changyu Gao**, Andrew Lowy, Stephen J. Wright, Xingyu Zhou.
 Optimal Rates for Robust Stochastic Convex Optimization, Submitted.
 
-**Changyu Gao**, Andrew Lowy, Stephen J. Wright, Xingyu Zhou. Private Heterogeneous Federated Learning Without a Trusted Server Revisited: Error-Optimal and Communication-Efficient Algorithms for Convex Losses. **ICML** 2024. [Poster Award, Midwest Machine Learning Symposium 2024] [link to paper](https://arxiv.org/abs/2407.09690)
+**Changyu Gao**, Andrew Lowy, Stephen J. Wright, Xingyu Zhou. Private Heterogeneous Federated Learning Without a Trusted Server Revisited: Error-Optimal and Communication-Efficient Algorithms for Convex Losses. **ICML** 2024. [Poster Award, Midwest Machine Learning Symposium 2024] [(link to paper)](https://arxiv.org/abs/2407.09690)
 
 **Changyu Gao** and Stephen J. Wright. Differentially Private Optimization for Smooth Nonconvex ERM
-arXiv preprint arXiv:2302.04972 (2023). [TPDP 2023 Poster [Poster](/files/DPOPT_tpdp_poster.pdf)]. [link to paper](https://arxiv.org/abs/2302.04972)
+arXiv preprint arXiv:2302.04972 (2023). [TPDP 2023 [Poster](/files/DPOPT_tpdp_poster.pdf)]. [(link to paper)](https://arxiv.org/abs/2302.04972)
 
 Charles Andrew Dickens, **Changyu Gao**, Connor Pryor, Stephen J. Wright, Lise Getoor.
 Convex and Bilevel Optimization for Neuro-Symbolic Inference and Learning. **ICML** 2024.
-[link to paper](https://arxiv.org/abs/2401.09651).
+[(link to paper)](https://arxiv.org/abs/2401.09651).
 
 Dickens, Charles, Connor Pryor, **Changyu Gao**, Alon Albalak, Eriq Augustine, William Wang,
 Stephen Wright, and Lise Getoor. A mathematical framework, a taxonomy of modeling paradigms, and
-a suite of learning techniques for neural-symbolic systems, arXiv preprint arXiv:2407.09693 (2024). [link to paper](https://arxiv.org/abs/2407.09693)
+a suite of learning techniques for neural-symbolic systems, arXiv preprint arXiv:2407.09693 (2024). [(link to paper)](https://arxiv.org/abs/2407.09693)
