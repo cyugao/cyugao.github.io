@@ -14,7 +14,6 @@
 \usepackage{tabularx}
 \usepackage{hyperref}
 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -45,43 +44,48 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
+\item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+  \vspace{-1pt}
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubheadingTitleOnly}[1]{
-  \vspace{-1pt}\item
-    \textbf{#1}
+  \vspace{-1pt}
+\item
+  \textbf{#1}
   \vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=*, label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}}
+\newcommand{\resumeItemListStart}{
+\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \begin{document}
 
@@ -93,12 +97,12 @@
 
 \begin{center}
   \textbf{\Huge Changyu Gao}
-\begin{center}
-  \begin{tabular}{c}
-    \href{mailto:changyu.gao@wisc.edu}{Email:changyu.gao@wisc.edu} \\
-    \faGithub \, \href{https://github.com/cyugao}{cyugao} \, \faLinkedin \, \href{https://www.linkedin.com/in/changyu-gao}{in/changyu-gao}
-  \end{tabular}
-\end{center}
+  \begin{center}
+    \begin{tabular}{c}
+      \href{mailto:changyu.gao@wisc.edu}{Email:changyu.gao@wisc.edu} \\
+      \faGithub \, \href{https://github.com/cyugao}{cyugao} \, \faLinkedin \, \href{https://www.linkedin.com/in/changyu-gao}{in/changyu-gao}
+    \end{tabular}
+  \end{center}
 \end{center}
 
 %-----------EDUCATION-----------------
@@ -119,46 +123,53 @@
 \section{Research Experience}
 \textit{Advisor:} \textup{\textbf{Prof. Stephen Wright}}
 
-Summary: design algorithms that solves mathematical optimization problems with theoretical guarantees.
+Summary: design and analysis of optimization algorithms for machine learning applications.
 
 \resumeSubHeadingListStart
 
+\resumeSubheadingTitleOnly{Optimal Rates for Robust Stochastic Convex Optimization \\
+{\normalfont \textit{Collaborator:}} Andrew Lowy, Xingyu Zhou}
+\begin{itemize}
+  \item Developed novel stochastic convex optimization algorithms with robustness guarantees.
+  \item Achieved first optimal-rate results for robust stochastic convex optimization.
+  \item Significantly improved sample complexity and relaxed strict requirements of existing algorithms, broadening their applicability.
+\end{itemize}
+
 \resumeSubheadingTitleOnly{Private Federated Learning \\
-{\normalfont \textit{Collaborator:}} Dr. Andrew Lowy, Dr. Xingyu Zhou}
-  \begin{itemize}
-    \item Developed a novel federated learning algorithm with inter-silo record-level DP guarantees, combining the phased localization technique and a private federated learning version of SGD.
-    \item Our algorithm achieves the \textit{optimal} population excess risk bound for heterogeneous data distributions; previous algorithms only achieve suboptimal bounds.
-    \item Significantly improved the communication and gradient complexity over SOTA algorithms.
-  \end{itemize}
+{\normalfont \textit{Collaborator:}} Andrew Lowy, Xingyu Zhou}
+\begin{itemize}
+  \item Designed novel federated learning algorithm with privacy guarantees for heterogeneous data
+  \item Achieved optimal population excess risk bounds, surpassing previous state-of-the-art methods.
+  \item Significantly improved the communication and gradient complexity over SOTA algorithms.
+\end{itemize}
 
-\resumeSubheadingTitleOnly{Differentially Private Optimization for Smooth Nonconvex ERM}
-  \begin{itemize}
-    \item Designed differentially private optimization algorithms for finding an approximate second-order stationary point with convergence guarantees.
-    \item Proposed line search, mini-batching, and a two-phase strategy to improve the speed and practicality of the algorithms.
-    \item Implemented the algorithm using Pytorch and demonstrated its performance through experiments.
-  \end{itemize}
+\resumeSubheadingTitleOnly{Differentially Private Optimization}
+\begin{itemize}
+  \item Innovated differentially private algorithms for finding approximate second-order stationary points
+  \item Implemented adaptive line search and mini-batching strategies to enhance practical performance.
+  \item Developed PyTorch implementation demonstrating empirical effectiveness through experiments.
+\end{itemize}
 
-% \resumeSubheadingTitleOnly{Neural Collapse and Loss Function Design \\ {\normalfont \textit{Collaborator:}} Dr. Yiqiao Zhong}
+% \resumeSubheadingTitleOnly{Neural Collapse and Loss Function Design \\ {\normalfont \textit{Collaborator:}} Yiqiao Zhong}
 %   \begin{itemize}
 %     \item Conducted extensive experiments to examine the impact of diverse loss functions on the neural collapse phenomenon.
 %     % \item Investigated the convergence behavior of different loss functions.
 %     \item Characterized and analyzed the convergence behavior for the cross entropy loss function with label smoothing, for linearly separable data.
 %   \end{itemize}
 
-
-\resumeSubheadingTitleOnly{Optimization Methods for Probabilistic Soft Logic (PSL)}
-  \begin{itemize}
-    \item Implemented and tested HOGWILD! and Frank-Wolfe methods for PSL framework using Java.
-    \item Executed inference experiments on real-world datasets, validating the practicality of these methods.
-    \item Proved theoretical guarantees for the proposed bilevel formulation of PSL.
-  \end{itemize}
-
+\resumeSubheadingTitleOnly{Optimization Methods for Probabilistic Soft Logic (PSL) \\
+{\normalfont \textit{Collaborator:}} Charles Dickens, \textbf{Changyu Gao}, Connor Pryor, Lise Getoor}
+\begin{itemize}
+  \item Implemented and tested HOGWILD! and Frank-Wolfe methods for PSL framework using Java.
+  \item Executed inference experiments on real-world datasets, validating the practicality of these methods.
+  \item Proved theoretical guarantees for the proposed bilevel formulation of PSL
+\end{itemize}
 
 \resumeSubheadingTitleOnly{Parameter Learning with Derivative-Free Optimization (DFO) Methods}
-  \begin{itemize}
-    \item Implemented the parameter learning procedure for Lorenz96 model using DFO methods in Python.
-    \item Performed optimization with uncertainty function values using soft interpolation and Gaussian Process methods.
-  \end{itemize}
+\begin{itemize}
+  \item Implemented the parameter learning procedure for Lorenz96 model using DFO methods in Python
+  \item Performed optimization with inexact function values using interpolation and Bayesian methods
+\end{itemize}
 
 % \resumeItem{Subseasonal Climate Forecasting}
 % {Improved the parameter estimation with ensembles. Investigated the sensitivity of the dynamic systems. Implemented model reduction methods in Python.}
@@ -178,19 +189,14 @@ Summary: design algorithms that solves mathematical optimization problems with t
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
-
-
-
 \resumeSubheading {Research Scientist Intern, Meta}{Menlo Park, CA}
-{Team: \textup{\textbf{Meta AI (FAIR) -- Reality Labs}, supervised by \textbf{Dr. Min Xu}}}{Sep 2022 -- Jan 2023}
+{Team: \textup{\textbf{Meta AI Research (FAIR) -- Reality Labs}}}{Sep 2022 -- Jan 2023}
 \resumeItemListStart
 \resumeItem{Adaptive Training for Transformer-based Models}{
   \begin{itemize}
-    \item Contributed to the open source project \href{https://github.com/facebookresearch/fairscale}{fairscale}.
-    Fixed gradient accumulation bugs.
-    \item Implemented methods to collect and analyze the gradient statistics during training of the Translation task using the Transformer model.
-    Based on the gradient statistics, designed and implemented an adaptive training method to improve the training efficiency.
-    \item Our algorithm uses the gradient statistics to dynamically adjust the gradient accumulation steps and the learning rate, achieving the baseline with better efficiency.
+    \item Developed adaptive training algorithms and engineered gradient statistics analysis framework
+    \item Achieved baseline performance with reduced computation, improving training efficiency
+    \item Contributed to Meta's FairScale library, resolving critical gradient accumulation issues
   \end{itemize}
 }
 \resumeItemListEnd
@@ -200,10 +206,9 @@ Summary: design algorithms that solves mathematical optimization problems with t
 \resumeItemListStart
 \resumeItem{Mining Inconsistency Issues using Semantic Search Model}{
   \begin{itemize}
-    \item Applied the semantic search model to the customer contact data, facilitating inconsistency detection.
-    \item Collected and refined the queries for semantic search; oversaw the data annotation process.
-    \item Implemented two fine-tuning schemes of the encoder used in the semantic search model in Tensorflow and thus improved the search model accuracy.
-    \item Important inconsistency issues discovered were escalated to the corresponding issue owners.
+    \item Developed semantic search system for detecting customer experience inconsistencies
+    \item Enhanced search accuracy through fine-tuning approaches in TensorFlow
+    \item Identified and escalated critical inconsistency issues to the corresponding teams
   \end{itemize}
 }
 \resumeItemListEnd
@@ -216,9 +221,7 @@ Summary: design algorithms that solves mathematical optimization problems with t
 % {Surveyed various types of complex-valued neural networks. Implemented Associative LSTM in Keras. Validated its performance with experiments.}
 % \resumeItemListEnd
 
-
 \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------------
 % \section{Selected Projects}
@@ -246,21 +249,23 @@ Summary: design algorithms that solves mathematical optimization problems with t
 \section{Publications}
 
 \begin{itemize}[leftmargin=*, label={}]
-  \item 	
-  \textbf{Changyu Gao}, Andrew Lowy, Stephen Wright, Xingyu Zhou. Private Heterogeneous Federated Learning Without a Trusted Server Revisited: Error-Optimal and Communication-Efficient Algorithms for Convex Losses, \textbf{ICML} 2024.
+  \item
+    \textbf{Changyu Gao}, Andrew Lowy, Stephen J. Wright, Xingyu Zhou. Private Heterogeneous Federated Learning Without a Trusted Server Revisited: Error-Optimal and Communication-Efficient Algorithms for Convex Losses, Proceedings of the 41st International Conference on Machine Learning (\textbf{ICML 2024}), Vienna, Austria. PMLR 235, 2024. [\textbf{Poster Award}, Midwest Machine Learning Symposium 2024]
 
-  \item 
-  \textbf{Changyu Gao} and Stephen J Wright. Differentially Private Optimization for Smooth Nonconvex ERM,
-  \href{https://arxiv.org/abs/2302.04972}{arXiv preprint}. \href{https://tpdp.journalprivacyconfidentiality.org/2023/}{TPDP 2023} Poster.
+  \item \textbf{Changyu Gao} and Stephen J. Wright. Differentially Private Optimization for Smooth Nonconvex ERM,
+    \href{https://arxiv.org/abs/2302.04972}{arXiv preprint} arXiv:2302.04972 (2023). [TPDP 2023 Poster]
+
+  \item \textbf{Changyu Gao}, Andrew Lowy, Stephen J. Wright, Xingyu Zhou. Optimal Rates for Robust Stochastic Convex Optimization, submitted.
+  % to the 6th annual Symposium on Foundations of Responsible Computing (FORC 2025).
 
   \item
-  Charles Andrew Dickens, \textbf{Changyu Gao}, Connor Pryor, Stephen Wright, Lise Getoor.
-  Convex and Bilevel Optimization for Neuro-Symbolic Inference and Learning, \textbf{ICML} 2024.
-
+    Charles Andrew Dickens, \textbf{Changyu Gao}, Connor Pryor, Stephen J. Wright, Lise Getoor.
+    Convex and Bilevel Optimization for Neuro-Symbolic Inference and Learning, Proceedings of the 41st International Conference on Machine Learning (\textbf{ICML 2024}), Vienna, Austria. PMLR 235, 2024.
+  
+  \item Charles Andrew Dickens, Connor Pryor, \textbf{Changyu Gao}, Alon Albalak, Eriq Augustine, William Wang, Stephen J. Wright, and Lise Getoor. A mathematical framework, a taxonomy of modeling paradigms, and a suite of learning techniques for neural-symbolic systems, arXiv preprint arXiv:2407.09693 (2024).
 \end{itemize}
 % add some space between
 \vspace{0.2cm}
-\textbf{Hobbies and interests}: music, guitar, hiking, tech, society, language, reading, podcasts.
-
+\textbf{Hobbies and interests}: music, guitar, hiking, tech, society, language, reading, podcasts
 %-------------------------------------------
 \end{document}
