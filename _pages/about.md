@@ -21,13 +21,13 @@ Check out my CV [here](/resume/resume.pdf).
 Email: [firstname].[lastname] [at] wisc.edu
 
 ## Publications
-**Changyu Gao**, Andrew Lowy, Stephen J. Wright, Xingyu Zhou.
+**Changyu Gao**, Andrew Lowy, Xingyu Zhou, Stephen J. Wright.
 Optimal Rates for Robust Stochastic Convex Optimization.
 
 To appear in the 6th annual Symposium on Foundations of Responsible
 Computing (**FORC** 2025). [[link]](https://arxiv.org/abs/2412.11003)
 
-**Changyu Gao**, Andrew Lowy, Stephen J. Wright, Xingyu Zhou. Private Heterogeneous Federated Learning Without a Trusted Server Revisited: Error-Optimal and Communication-Efficient Algorithms for Convex Losses.
+**Changyu Gao**, Andrew Lowy, Xingyu Zhou, Stephen J. Wright. Private Heterogeneous Federated Learning Without a Trusted Server Revisited: Error-Optimal and Communication-Efficient Algorithms for Convex Losses.
 
 **ICML** 2024. [Poster Award, Midwest Machine Learning Symposium 2024] [[link]](https://arxiv.org/abs/2407.09690)
 
