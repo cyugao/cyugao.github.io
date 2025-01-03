@@ -21,27 +21,39 @@ Check out my CV [here](/resume/resume.pdf).
 Email: [firstname].[lastname] [at] wisc.edu
 
 ## Publications
+
+<div class="publication-item" markdown="1">
 **Changyu Gao**, Andrew Lowy, Xingyu Zhou, Stephen J. Wright.
 Optimal Rates for Robust Stochastic Convex Optimization.
 
 To appear in the 6th annual Symposium on Foundations of Responsible
-Computing (**FORC** 2025). [[link]](https://arxiv.org/abs/2412.11003)
+Computing (**FORC** 2025) [[link]](https://arxiv.org/abs/2412.11003)
+</div>
 
+<div class="publication-item" markdown="1">
 **Changyu Gao**, Andrew Lowy, Xingyu Zhou, Stephen J. Wright. Private Heterogeneous Federated Learning Without a Trusted Server Revisited: Error-Optimal and Communication-Efficient Algorithms for Convex Losses.
 
 **ICML** 2024. [Poster Award, Midwest Machine Learning Symposium 2024] [[link]](https://arxiv.org/abs/2407.09690)
+</div>
 
+<div class="publication-item" markdown="1">
 **Changyu Gao** and Stephen J. Wright. Differentially Private Optimization for Smooth Nonconvex ERM
-arXiv preprint arXiv:2302.04972 (2023). [TPDP 2023 [Poster](/files/DPOPT_tpdp_poster.pdf)]. [[link]](https://arxiv.org/abs/2302.04972)
 
+arXiv preprint arXiv:2302.04972 (2023) [TPDP 2023 [Poster](/files/DPOPT_tpdp_poster.pdf)] [[link]](https://arxiv.org/abs/2302.04972)
+</div>
+
+<div class="publication-item" markdown="1">
 Charles Andrew Dickens, **Changyu Gao**, Connor Pryor, Stephen J. Wright, Lise Getoor.
 Convex and Bilevel Optimization for Neuro-Symbolic Inference and Learning.
 
 **ICML** 2024.
-[[link]](https://arxiv.org/abs/2401.09651).
+[[link]](https://arxiv.org/abs/2401.09651)
+</div>
 
+<div class="publication-item" markdown="1">
 Dickens, Charles, Connor Pryor, **Changyu Gao**, Alon Albalak, Eriq Augustine, William Wang,
 Stephen Wright, and Lise Getoor. A mathematical framework, a taxonomy of modeling paradigms, and
-a suite of learning techniques for neural-symbolic systems,
+a suite of learning techniques for neural-symbolic systems.
 
-ArXiv preprint arXiv:2407.09693 (2024). [[link]](https://arxiv.org/abs/2407.09693)
+ArXiv preprint arXiv:2407.09693 (2024) [[link]](https://arxiv.org/abs/2407.09693)
+</div>
