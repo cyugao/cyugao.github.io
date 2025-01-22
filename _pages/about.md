@@ -18,7 +18,7 @@ Check out my CV [here](/resume/resume.pdf).
 
 ## Contact
 
-Email: [firstname].[lastname] [at] wisc.edu
+Email: ustcgcy [at] gmail
 
 ## Publications
 
