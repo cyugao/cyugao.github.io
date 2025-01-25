@@ -84,6 +84,16 @@
     \newcommand{\resumeItemListEnd}{
   \end{itemize}\vspace{-5pt}}
 
+\newcommand{\resumeDualDegree}[5]{
+  \vspace{-1pt}
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \textit{\small M.S., Computer Science} & \textit{\small Feb 2021 -- June 2024} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -108,13 +118,10 @@
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
-\resumeSubheading
+\resumeDualDegree
 {University of Wisconsin--Madison}{Madison, WI}
-{Ph.D. Candidate in Industrial Engineering, Optimization Track}{Sep 2019 -- June 2025 (Expected)}
-% \textit{\small{M.S. Student in Computer Science}}\textit{\small{Feb 2021 -- Present}}
-\resumeSubheading
-{University of Wisconsin--Madison}{Madison, WI}
-{M.S., Computer Science}{Feb 2021 -- June 2024}
+{Ph.D. Candidate, Industrial Engineering, Optimization Track}{Sep 2019 -- June 2025 (Expected)}
+{}
 \resumeSubheading
 {University of Science and Technology of China}{Hefei, China}
 {B.S., Mathematics and Applied Mathematics \emph{(Outstanding Graduate)}}{Aug 2015 -- June 2019}
@@ -131,15 +138,15 @@ Summary: design and analysis of optimization algorithms for machine learning app
 {\normalfont \textit{Collaborator:}} Andrew Lowy, Xingyu Zhou}
 \begin{itemize}
   \item Developed novel stochastic convex optimization algorithms with robustness guarantees.
-  \item Achieved first optimal-rate results for robust stochastic convex optimization.
-  \item Significantly improved sample complexity and relaxed strict requirements of existing algorithms, broadening their applicability.
+  \item Achieved first \textit{optimal-rate} results for robust stochastic convex optimization.
+  \item Significantly improved sample complexity and relaxed strict requirements over existing algorithms, broadening their applicability.
 \end{itemize}
 
 \resumeSubheadingTitleOnly{Private Federated Learning \\
 {\normalfont \textit{Collaborator:}} Andrew Lowy, Xingyu Zhou}
 \begin{itemize}
-  \item Designed novel federated learning algorithm with privacy guarantees for heterogeneous data.
-  \item Achieved optimal population excess risk bounds, surpassing previous state-of-the-art methods.
+  \item Designed \textit{novel federated learning algorithm} with privacy guarantees for heterogeneous data.
+  \item Achieved \textit{optimal} population excess risk bounds, surpassing previous state-of-the-art methods.
   \item Significantly improved the communication and gradient complexity over SOTA algorithms.
 \end{itemize}
 
@@ -194,7 +201,7 @@ Summary: design and analysis of optimization algorithms for machine learning app
 \resumeItemListStart
 \resumeItem{Adaptive Training for Transformer-based Models}{
   \begin{itemize}
-    \item Developed adaptive training algorithms and engineered gradient statistics analysis framework.
+    \item Developed \textit{adaptive training} algorithms and engineered gradient statistics analysis framework.
     \item Achieved baseline performance with reduced computation, improving training efficiency for transformer-based models.
     \item Contributed to Meta's FairScale library, resolving critical gradient accumulation issues.
   \end{itemize}
@@ -207,7 +214,7 @@ Summary: design and analysis of optimization algorithms for machine learning app
 \resumeItem{Mining Inconsistency Issues using Semantic Search Model}{
   \begin{itemize}
     \item Developed semantic search system for detecting customer experience inconsistencies using \textit{natural language processing} techniques.
-    \item Enhanced search accuracy through \textit{fine-tuning} approaches in TensorFlow.
+    \item Enhanced search accuracy through \textit{fine-tuning} using TensorFlow.
     \item Identified and escalated critical inconsistency issues to the corresponding teams.
   \end{itemize}
 }
@@ -267,9 +274,9 @@ Summary: design and analysis of optimization algorithms for machine learning app
     Convex and Bilevel Optimization for Neuro-Symbolic Inference and Learning, Proceedings of the 41st International Conference on Machine Learning (\textbf{ICML 2024}), Vienna, Austria. PMLR 235, 2024.
 
   \item \textbf{Changyu Gao} and Stephen J. Wright. Differentially Private Optimization for Smooth Nonconvex ERM,
-    \href{https://arxiv.org/abs/2302.04972}{arXiv preprint} arXiv:2302.04972 (2023). [Theory and Practice of Differential Privacy (TPDP 2023) Poster]
+    \href{https://arxiv.org/abs/2302.04972}{arXiv preprint} arXiv:2302.04972 (2023). [Theory and Practice of Differential Privacy 2023 Poster]
   
-  \item Charles Andrew Dickens, Connor Pryor, \textbf{Changyu Gao}, Alon Albalak, Eriq Augustine, William Wang, Stephen J. Wright, and Lise Getoor. A mathematical framework, a taxonomy of modeling paradigms, and a suite of learning techniques for neural-symbolic systems, arXiv preprint arXiv:2407.09693 (2024).
+%   \item Charles Andrew Dickens, Connor Pryor, \textbf{Changyu Gao}, Alon Albalak, Eriq Augustine, William Wang, Stephen J. Wright, and Lise Getoor. A mathematical framework, a taxonomy of modeling paradigms, and a suite of learning techniques for neural-symbolic systems, arXiv preprint arXiv:2407.09693 (2024).
 \end{itemize}
 
 \end{document}
