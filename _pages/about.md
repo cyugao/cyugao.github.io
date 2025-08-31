@@ -8,11 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD Candidate in Industrial Engineering at the [University of Wisconsin-Madison](https://www.wisc.edu/), under the guidance of Prof. [Stephen Wright](http://pages.cs.wisc.edu/~swright/). I also hold an M.S. in Computer Science from the University of Wisconsin-Madison. Prior to my time in Madison, I earned a B.S. in Mathematics from the [University of Science and Technology of China (USTC)](https://en.ustc.edu.cn/).
+I am an Applied Scientist at Amazon. I recently completed my Ph.D. in Industrial Engineering at the [University of Wisconsin-Madison](https://www.wisc.edu), under the guidance of Prof. [Stephen Wright](http://pages.cs.wisc.edu/~swright). My doctoral research centered on the design and analysis of optimization algorithms for machine learning applications. In addition to my Ph.D., I hold an M.S. in Computer Science from UW-Madison and a B.S. in Mathematics from the [University of Science and Technology of China (USTC)](https://en.ustc.edu.cn).
 
-My research is centered on the design and analysis of optimization algorithms for machine learning applications.
-
-**I am actively seeking machine learning engineer/scientist, or quantative researcher positions in the industry!**
+<!-- **I am actively seeking machine learning engineer/scientist, or quantative researcher positions in the industry!** -->
 
 Check out my CV [here](/resume/resume.pdf).
 
